@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/room.css">
+    <link rel="stylesheet" href="./styles/modal.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;700&display=swap"
@@ -62,10 +63,11 @@
             <section id="questions">
                 <h2 class="sr-only">Perguntas da comunidade</h2>
 
+                <!-- Question 1 -->
                 <div class="question-wrapper">
                     <div class="question-content">
                         <div class="user">
-                            <img src="./images/avatar.svg" alt="Ícone do avatar">
+                            <img src="./images/user.svg" alt="Ícone do avatar">
                         </div>
 
                         <div class="question">
@@ -85,9 +87,101 @@
                         </a>
                     </div>
                 </div>
+
+                <!-- Question 2 -->
+                <div class="question-wrapper">
+                    <div class="question-content">
+                        <div class="user">
+                            <img src="./images/user.svg" alt="Ícone do avatar">
+                        </div>
+
+                        <div class="question">
+                            <p>O que é TypeScript</p>
+                        </div>
+                    </div>
+                    
+                    <div class="actions">
+                        <a href="#" class="check">
+                            <img src="./images/check.svg" alt="Marcar como lida">
+                            Marcar como lida
+                        </a>
+
+                        <a href="#" class="delete">
+                            <img src="./images/trash.svg" alt="Excluir">
+                            Excluir
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="question-wrapper">
+                    <div class="question-content">
+                        <div class="user">
+                            <img src="./images/user.svg" alt="Ícone do avatar">
+                        </div>
+
+                        <div class="question">
+                            <p>Você já sabe quais as bases que você precisa melhorar para alcançar o seu próximo nível com maestria? Definiu o seu foco e objetivo para seguir em frente? Estou curioso e embasbacado com sua perseverança por ter alcançado a terceira aula e sei que você vai continuar até o fim, então responde aí pra gente!!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="actions">
+                        <a href="#" class="check">
+                            <img src="./images/check.svg" alt="Marcar como lida">
+                            Marcar como lida
+                        </a>
+
+                        <a href="#" class="delete">
+                            <img src="./images/trash.svg" alt="Excluir">
+                            Excluir
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="question-wrapper read">
+                    <div class="question-content">
+                        <div class="user">
+                            <img src="./images/user.svg" alt="Ícone do avatar">
+                        </div>
+
+                        <div class="question">
+                            <p>O que é script?</p>
+                        </div>
+                    </div>
+                    
+                    <div class="actions">
+                        <a href="#" class="delete">
+                            <img src="./images/trash.svg" alt="Excluir">
+                            Excluir
+                        </a>
+                    </div>
+                </div>
             </section>
 
         </main>
+
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal-wrapper">
+
+        <div class="modal">
+            <h2>Excluir pergunta</h2>
+
+            <p>Tem certeza que você deseja excluir esta pergunta?</p>
+
+            <label class="sr-only" for-id="password">Digite sua senha admin</label>
+
+            <form action="#">
+                <input type="password" name="password" id="password" placeholder="Digite sua senha">
+
+                <div class="buttons">
+                    <div class="button grey">Cancelar</div>
+                    <button class="red">Sim, excluir</button>
+                </div>
+            </form>
+        </div>
 
     </div>
 
