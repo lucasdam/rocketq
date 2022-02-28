@@ -25,6 +25,13 @@ function handleCLick(event, check = true) { // Define 'check' como 'true' para t
     event.preventDefault() // Impede que o evento padrão ocorra. Nesse caso, diz para o '<a>' não se comportar como um link, para não alterar a URL colocando '#'
 
     const text = check ? 'Marcar como lida' : 'Excluir pergunta'
+
+    const slug = check ? 'check' : 'delete'
+    const roomId = document.querySelector('#room-id').dataset.id
+    const questionId = event.target.dataset.id
+
+    const form = document.querySelector('.modal form')
+    form.setAttribute('action', `/question/${roomId}/${questionId}/${slug}`) // Altera o valor do atributo 'action' do form. Motando a URL para onde o formulário vai
     
     modalTitle.innerHTML = text // Altera o conteúdo. Se check for true, 'Marcar como lida'. Se for false, 'Excluir pergunta'
     modalDescription.innerHTML = check ? 'Tem certeza que deseja marcar como lida esta pergunta?' : 'Tem certeza que deseja excluir esta pergunta?'
