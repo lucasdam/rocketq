@@ -1,0 +1,11 @@
+<html>
+    <head>
+        <title>Senha incorreta</title>
+        <script>
+            confirm("Senha incorreta")
+            window.location.replace('/room/<%= roomId %>')
+        </script>
+    </head>
+</html>
+
+<!-- Essa página é apresentada ao usuário quando o mesmo digita uma senha incorreta. Aqui será aberto uma janela informando que a senha está incorreta. Quando o usuário clicar em 'OK' (opção padrão do navegador), o usuário será mandado de volta para a página room em que se encontrava antes -->
