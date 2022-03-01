@@ -14,4 +14,4 @@ server.use(express.urlencoded({extended: true})) // Trabalhando como um middlewa
 
 server.use(route) // Vai usar o arquivo 'route'
 
-server.listen(3000, () => console.log('RODANDO')) // "node src/server.js" para rodar ou "npm start" pois há um atalho configurado no package.json. Se invés de 'start' for outro nome, usar "npm run outro-nome"
+server.listen(process.env.PORT || 3000, () => console.log('Running...')) // "node src/server.js" para rodar ou "npm start" pois há um atalho configurado no package.json. Se invés de 'start' for outro nome, usar "npm run outro-nome"
