@@ -39,6 +39,6 @@ Colocar em prática técnicas, conceitos e tecnologias utilizadas no desenvolvim
 
 ##### Passo 3. Instale as dependências: `npm install`
 
-##### Passo 4. Instale o banco de dados: `npm init-db`
+##### Passo 4. Instale o banco de dados: `npm run init-db`
 
 ##### Passo 5. Inicie a aplicação: `npm start`
