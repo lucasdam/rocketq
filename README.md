@@ -31,7 +31,7 @@ Colocar em prática técnicas, conceitos e tecnologias utilizadas no desenvolvim
 
 <br />
 
-### 📂 Como instalar o projeto:
+### 📂 Como executar o projeto:
 
 ##### Passo 1. Clone este repositório pelo seu terminal: `git clone https://github.com/lucasdam/rocketq.git`
 
@@ -39,6 +39,8 @@ Colocar em prática técnicas, conceitos e tecnologias utilizadas no desenvolvim
 
 ##### Passo 3. Instale as dependências: `npm install`
 
-##### Passo 4. Instale o banco de dados: `npm run init-db`
+##### Passo 4 (opcional). Caso deseje recriar o banco, acesso o diretório `./src/db/`, remova o arquivo `database.sqlite` e execute o comando `npm run init-db`. 
 
-##### Passo 5. Inicie a aplicação: `npm start`
+##### Passo 5. Inicie a aplicação: `npm start` ou `npm run dev`
+
+##### Passo 6. Para acessar: `http://localhost:3000`
